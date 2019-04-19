@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Lịch Việt"
+        android:id="@+id/item_lichview"
+        android:icon="@mipmap/menu_lichviet"/>
+
+    <item android:icon="@mipmap/menu_phanhoi"
+        android:title="Phản Hồi"
+        android:id="@+id/item_phanhoi"/>
+
+    <item android:id="@+id/item_danhgia"
+        android:icon="@mipmap/menu_danhgia"
+        android:title="Đánh Giá"/>
+
+    <item android:title="Chia Sẻ"
+        android:icon="@mipmap/menu_chiase"
+        android:id="@+id/item_chiase"/>
+</menu>

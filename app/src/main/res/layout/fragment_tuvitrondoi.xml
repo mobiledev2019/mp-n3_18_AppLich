@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:clickable="true"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@mipmap/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_back"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/back"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+            <TextView
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@+id/img_back"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:text="Tử vi trọn đời"
+                android:textStyle="bold"
+                android:layout_marginLeft="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="#4d4d4d"
+            android:text="Giới tính"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:text="Nam"
+                android:id="@+id/btn_nam"
+                android:background="@drawable/radio_flat_selector"
+                android:layout_width="76dp"
+                android:layout_height="36dp" />
+            <Button
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:text="Nữ"
+                android:id="@+id/btn_nu"
+                android:background="@drawable/radio_flat_selector"
+                android:layout_width="76dp"
+                android:layout_height="36dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:textColor="#4d4d4d"
+            android:text="Ngày sinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="96dp"
+            android:textSize="16sp"
+            android:textColor="#4d4d4d"
+            android:text="19/09/1997"
+            android:id="@+id/txt_ngaysinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img_chonngaysinh"
+            android:src="@mipmap/chon_ngaythangnam"
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_xemketqua"
+        android:textSize="16sp"
+        android:background="@drawable/background_button_xemketqua"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:text="Xem kết quả"
+        android:layout_marginTop="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="154dp"
+        android:layout_height="40dp" />
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:clickable="true"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@mipmap/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_back"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/back"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+            <TextView
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@+id/img_back"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:text="Tạo sự kiện mới"
+                android:textStyle="bold"
+                android:layout_marginLeft="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_sinhnhat"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/sinhnhat"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#4d4d4d"
+                android:text="Sinh nhật"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_giadinh"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/giadinh"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#4d4d4d"
+                android:text="Gia đình"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_congviec"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/congviec"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#4d4d4d"
+                android:text="Công việc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_kyniem"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/kyniem"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#4d4d4d"
+                android:text="Kỷ niệm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_canhan"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/canhan"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#4d4d4d"
+                android:text="Cá nhân"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_henho"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/henho"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#4d4d4d"
+                android:text="Hẹn hò"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_viechy"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/viechy"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#4d4d4d"
+                android:text="Việc hỷ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_khac"
+            android:layout_marginRight="54dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/khac"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#4d4d4d"
+                android:text="Khác"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

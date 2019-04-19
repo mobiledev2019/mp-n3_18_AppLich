@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:clickable="true"
+    android:background="@android:color/white"
+    android:id="@+id/drawerlayout"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/top_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginTop="36dp"
+                            android:id="@+id/img_drawerlayout"
+                            android:layout_marginLeft="16dp"
+                            android:src="@mipmap/menu"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp" />
+                        <TextView
+                            android:layout_marginTop="34dp"
+                            android:layout_toRightOf="@+id/img_drawerlayout"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            android:text="Lịch Việt"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="32dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                </FrameLayout>
+                <android.support.design.widget.TabLayout
+                    android:layout_marginTop="6dp"
+                    app:tabTextAppearance="@style/MyCustomTextAppearance"
+                    app:tabTextColor="#808080"
+                    app:tabSelectedTextColor="#2e318d"
+                    app:tabGravity="fill"
+                    app:tabMode="scrollable"
+                    android:id="@+id/tablayout"
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></android.support.design.widget.TabLayout>
+            </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpaper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationview"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@mipmap/banner_menu"
+                android:layout_width="match_parent"
+                android:layout_height="160dp" />
+            <LinearLayout
+                android:id="@+id/ln_lichviet"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="14dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/menu_lichviet"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:text="Lịch Việt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_phanhoi"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="14dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/menu_phanhoi"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:text="Phản Hồi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_danhgia"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="14dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/menu_danhgia"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:text="Đánh Giá"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_chise"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="14dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/menu_chiase"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp" />
+                <TextView
+                    android:layout_marginLeft="18dp"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:text="Chia Sẻ"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

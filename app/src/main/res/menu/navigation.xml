@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigation_lichngay"
+        android:title="Lịch ngày"
+        android:icon="@mipmap/lichngay_gray"/>
+    <item android:id="@+id/navigation_lichthang"
+        android:title="Lịch tháng"
+        android:icon="@mipmap/lichthang_gray"/>
+    <item android:id="@+id/navigation_doingay"
+        android:title="Lịch ngày"
+        android:icon="@mipmap/doingay_gray"/>
+    <item android:id="@+id/navigation_tuvi"
+        android:title="Lịch ngày"
+        android:icon="@mipmap/tuvi_gray"/>
+    <item android:id="@+id/navigation_sukien"
+        android:title="Lịch ngày"
+        android:icon="@mipmap/sukien_gray"/>
+</menu>

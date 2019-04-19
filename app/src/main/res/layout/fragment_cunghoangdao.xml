@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:clickable="true"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@mipmap/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_back"
+                android:layout_marginLeft="16dp"
+                android:src="@mipmap/back"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+            <TextView
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@+id/img_back"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:text="Cung hoàng đạo"
+                android:textStyle="bold"
+                android:layout_marginLeft="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_bachduong"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/bachduong"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Bạch Dương"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_kimnguu"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/kimnguu"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Kim Ngưu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_songtu"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/songtu"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Song Tử"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_cugiai"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/cugiai"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Cự Giải"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_sutu"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/sutu"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Sư Tử"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_xunu"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/xunu"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Xử Nữ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_thienbinh"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/thienbinh"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Thiên Bình"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_thienyet"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/thienyet"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Thiên Yết"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_nhanma"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/nhanma"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Nhân Mã"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ln_maket"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/maket"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Ma Kết"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_baobinh"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/baobinh"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Bảo Bình"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_songngu"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/songngu"
+                android:layout_width="68dp"
+                android:layout_height="68dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:textSize="14sp"
+                android:textColor="#4d4d4d"
+                android:text="Song Ngư"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
